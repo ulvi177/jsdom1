@@ -64,46 +64,35 @@ a:hover {
 #jsdom .text .sent:hover {
   background-color: #7690f0;
 }
-
-#weather {
-  padding: 20px 0 20px 0;
+@media (max-width: 992px) {
+  #jsdom .chat {
+    width: 100%;
+  }
+  #jsdom .text {
+    margin: 10px 20px;
+  }
+  #jsdom .text input {
+    margin: 10px 10px 0 0;
+  }
 }
-#weather .box {
-  margin-top: 20px;
-  padding-top: 20px;
-  background: #9c6644;
-  text-align: center;
-  color: #ffffff;
-  max-width: 250px;
-  height: 400px;
-  border-radius: 20px;
-}
-#weather .box .data h1 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-#weather .box .data h2 {
-  font-size: 20px;
-  margin-bottom: 20px;
-  padding: 10px 0 10px 0;
-}
-#weather .box input {
-  width: 60%;
-  padding: 7px;
-  border: none;
-  border-radius: 20px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-#weather .box #btn {
-  padding: 10px;
-  border: none;
-  margin: 0 70px;
-  border-radius: 20px;
-  background-color: #f8c471;
-  color: white;
-  cursor: pointer;
-}
-#weather .box #btn:hover {
-  background-color: #f7b347;
+@media (max-width: 774px) {
+  #jsdom .chat {
+    width: 100%;
+    margin: 20px auto;
+  }
+  #jsdom .chat .message {
+    font-size: 14px;
+  }
+  #jsdom .text {
+    margin: 10px 10px;
+  }
+  #jsdom .text input {
+    margin: 10px 5px 0 0;
+    font-size: 14px;
+  }
+  #jsdom .text .sent {
+    padding: 6px 15px;
+    margin: 10px 5px 0 0;
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=style.css.map */

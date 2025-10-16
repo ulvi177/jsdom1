@@ -19,6 +19,7 @@ $(document).ready(function () {
             }
 
         }
+        $("#messageyou").append(myel())
         $("#messageme").append(myel('class="end"'))
         $("#inputme").val("")  
         document.getElementById('messageme').scrollTop = document.getElementById('messageme').scrollHeight; 
@@ -42,28 +43,14 @@ $(document).ready(function () {
             }
 
         }
+        $("#messageme").append(myel())
         $("#messageyou").append(myel('class="end"'))
         $("#inputyou").val("")  
         document.getElementById('messageyou').scrollTop = document.getElementById('messageyou').scrollHeight;   
     });
 
 
-    $(document).on('keypress',function(e) {
-        if(e.which == 13) {
-            let url = `https://api.openweathermap.org/data/2.5/weather?q=${$("#myweather").val()}&appid=YOUR_API_KEY&units=metric   `
-            async function myweather() {
-                let responce = await fetch(url)
-                let data = await responce.json()
-                $("city").html(data.name)
-                $("temp").html(data.main.temp)
-                $("feels").html(data.main.feels_like)
-                $("mywather").val("")
-                console.log(data)
-            }
-            myweather()
-        }
     
-    });
 
 
 
