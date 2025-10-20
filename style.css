@@ -51,6 +51,7 @@ a:hover {
   margin: 10px 15px 0 30px;
   border: 1px solid #ccc;
   border-radius: 20px;
+  border: none;
 }
 #jsdom .text .sent {
   padding: 8px 22px;
@@ -64,6 +65,17 @@ a:hover {
 #jsdom .text .sent:hover {
   background-color: #7690f0;
 }
+@media (max-width: 1200px) {
+  #jsdom .chat {
+    width: 450px;
+  }
+  #jsdom .text {
+    margin: 10px 40px;
+  }
+  #jsdom .text input {
+    margin: 10px 12px 0 20px;
+  }
+}
 @media (max-width: 992px) {
   #jsdom .chat {
     width: 100%;
@@ -74,25 +86,61 @@ a:hover {
   #jsdom .text input {
     margin: 10px 10px 0 0;
   }
+  #jsdom .text .sent {
+    font-size: 18px;
+  }
 }
 @media (max-width: 774px) {
   #jsdom .chat {
-    width: 100%;
+    width: 80%;
     margin: 20px auto;
   }
   #jsdom .chat .message {
     font-size: 14px;
   }
   #jsdom .text {
-    margin: 10px 10px;
+    margin: auto;
   }
   #jsdom .text input {
     margin: 10px 5px 0 0;
     font-size: 14px;
   }
   #jsdom .text .sent {
-    padding: 6px 15px;
-    margin: 10px 5px 0 0;
+    padding: 10px 18px;
+    margin: 10px 5px 0 5px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 350px) {
+  #jsdom .chat .message {
+    font-size: 12px;
+  }
+  #jsdom .text input {
+    font-size: 12px;
+  }
+  #jsdom .text .sent {
+    padding: 10px 15px;
+  }
+  #jsdom .text h3 {
     font-size: 14px;
+  }
+}
+@media (max-width: 275px) {
+  #jsdom .chat {
+    width: auto;
+  }
+  #jsdom .chat .message {
+    font-size: 10px;
+  }
+  #jsdom .text .sent {
+    padding: 8px 15px;
+    font-size: 10px;
+  }
+  #jsdom .text input {
+    font-size: 10px;
+    padding: 5px;
+  }
+  #jsdom .text h3 {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=style.css.map */
