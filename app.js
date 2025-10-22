@@ -22,7 +22,8 @@ $(document).ready(function () {
         $("#messageyou").append(myel())
         $("#messageme").append(myel('class="end"'))
         $("#inputme").val("")  
-        document.getElementById('messageme').scrollTop = document.getElementById('messageme').scrollHeight; 
+        document.getElementById('messageme').scrollTop = document.getElementById('messageme').scrollHeight;
+        document.getElementById('messageyou').scrollTop = document.getElementById('messageyou').scrollHeight;
     });
 
     $("#you").click(function (e) {
@@ -46,7 +47,8 @@ $(document).ready(function () {
         $("#messageme").append(myel())
         $("#messageyou").append(myel('class="end"'))
         $("#inputyou").val("")  
-        document.getElementById('messageyou').scrollTop = document.getElementById('messageyou').scrollHeight;   
+        document.getElementById('messageyou').scrollTop = document.getElementById('messageyou').scrollHeight;
+        document.getElementById('messageme').scrollTop = document.getElementById('messageme').scrollHeight;  
     });
 
 
