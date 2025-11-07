@@ -27,7 +27,7 @@ a:hover {
   padding: 10px;
   border-radius: 20px;
   background-color: #ffffff;
-  overflow: auto;
+  overflow-y: auto;
 }
 #jsdom .chat .message .end {
   text-align: end;
@@ -40,6 +40,11 @@ a:hover {
   margin: 5px 0;
   padding: 10px 10px;
   border-radius: 20px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  word-wrap: break-word;
+  white-space: normal;
+  max-width: 70%;
 }
 #jsdom .text {
   display: flex;
